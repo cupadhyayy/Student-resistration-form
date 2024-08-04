@@ -1,0 +1,135 @@
+/* Basic reset and body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(#380036,#0CBABA);
+    margin: 0;
+    padding: 0;
+}
+
+/* Container to align form and records side by side */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Form container styling */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #0dad7d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Records container styling */
+.records-container {
+    flex: 1;
+    background-color: #0dad7d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 600px;
+}
+
+/* Form element styling */
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 5px 0 15px;
+    padding: 10px;
+    border: 1px solid #a1e9f3;
+    border-radius: 4px;
+}
+
+/* Button styling */
+form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+form button:hover {
+    background-color: #eb5c09;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #cf0fa6;
+    text-align: left;
+}
+
+table th {
+    background-color: #e48b16;
+    color: #020b0c;
+   
+}
+/* Action buttons in table */
+table td button {
+    padding: 6px 12px;
+    margin: 0 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Edit button styling */
+table td button.edit {
+    background-color: #77c90d;
+}
+
+table td button.edit:hover {
+    background-color: #e0a800;
+}
+
+/* Delete button styling */
+table td button.delete {
+    background-color: #dc3545;
+}
+
+table td button.delete:hover {
+    background-color: #c82333;
+}
+.container1{
+    text-align: center;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .form-container,
+    .records-container {
+        width: 100%;
+        max-width: none;
+    
+    }
+}
